@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+        // ตรวจสอบว่าเป็นมือถือหรือไม่
+        if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+            window.location.href = "kplus://transfer"; // URL Scheme ของแอปธนาคาร
+        } else {
+            alert("กรุณาเปิดลิงก์นี้บนมือถือเพื่อโอนเงิน");
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting to KPlus...</p>
+</body>
+</html>
